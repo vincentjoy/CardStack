@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardContainer" customModule="CardStack">
+            <connections>
+                <outlet property="outlets" destination="pf3-J0-E9b" id="bdF-jN-4AY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQK-Gb-RXs">
+                    <rect key="frame" x="0.0" y="44" width="414" height="802.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moD-2m-7qD">
+                    <rect key="frame" x="-4" y="797" width="422" height="99"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ecf-2m-mMC">
+                            <rect key="frame" x="0.0" y="0.0" width="422" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proceed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dO4-A0-uo7">
+                                    <rect key="frame" x="176" y="22" width="70" height="21"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="dO4-A0-uo7" firstAttribute="centerY" secondItem="Ecf-2m-mMC" secondAttribute="centerY" id="DsY-ak-hk3"/>
+                                <constraint firstItem="dO4-A0-uo7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ecf-2m-mMC" secondAttribute="leading" constant="16" id="ODh-eh-Omh"/>
+                                <constraint firstItem="dO4-A0-uo7" firstAttribute="centerX" secondItem="Ecf-2m-mMC" secondAttribute="centerX" id="R8c-zT-4qK"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dO4-A0-uo7" secondAttribute="trailing" constant="16" id="djh-MZ-nVz"/>
+                                <constraint firstAttribute="height" constant="65" id="hD2-bS-dtO"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaO-iQ-qwp">
+                            <rect key="frame" x="0.0" y="0.0" width="422" height="99"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="nextAction:" destination="-1" eventType="touchUpInside" id="klM-7N-S0f"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.23529411759999999" green="0.27450980390000002" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Ecf-2m-mMC" firstAttribute="top" secondItem="moD-2m-7qD" secondAttribute="top" id="1Dn-By-a7y"/>
+                        <constraint firstItem="JaO-iQ-qwp" firstAttribute="leading" secondItem="moD-2m-7qD" secondAttribute="leading" id="FUt-Kn-4yB"/>
+                        <constraint firstAttribute="trailing" secondItem="JaO-iQ-qwp" secondAttribute="trailing" id="Frd-kF-yK8"/>
+                        <constraint firstAttribute="trailing" secondItem="Ecf-2m-mMC" secondAttribute="trailing" id="nXh-e1-ys3"/>
+                        <constraint firstItem="JaO-iQ-qwp" firstAttribute="top" secondItem="moD-2m-7qD" secondAttribute="top" id="rIg-Ee-bYg"/>
+                        <constraint firstAttribute="bottom" secondItem="JaO-iQ-qwp" secondAttribute="bottom" id="xmt-MT-k32"/>
+                        <constraint firstItem="Ecf-2m-mMC" firstAttribute="leading" secondItem="moD-2m-7qD" secondAttribute="leading" id="zdv-8h-uOP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="moD-2m-7qD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="-4" id="0eG-3t-rmd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JQK-Gb-RXs" secondAttribute="trailing" id="1Ks-ZM-i8f"/>
+                <constraint firstItem="Ecf-2m-mMC" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="1ik-Sg-aNg"/>
+                <constraint firstItem="JQK-Gb-RXs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1pG-hg-V7y"/>
+                <constraint firstItem="JQK-Gb-RXs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CAb-ZV-IVq"/>
+                <constraint firstAttribute="bottom" secondItem="moD-2m-7qD" secondAttribute="bottom" id="KmV-uT-jhq"/>
+                <constraint firstItem="moD-2m-7qD" firstAttribute="centerY" secondItem="JQK-Gb-RXs" secondAttribute="bottom" id="MaC-og-wav"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="moD-2m-7qD" secondAttribute="trailing" constant="-4" id="o4j-Wm-egi"/>
+            </constraints>
+            <point key="canvasLocation" x="20" y="104"/>
+        </view>
+        <customObject id="pf3-J0-E9b" customClass="CardContainerOutlets" customModule="CardStack">
+            <connections>
+                <outlet property="actionTitleLabel" destination="dO4-A0-uo7" id="Ast-RQ-3ff"/>
+                <outlet property="bottomContiner" destination="moD-2m-7qD" id="BeT-B7-3bg"/>
+                <outlet property="containerView" destination="JQK-Gb-RXs" id="0hn-9t-HIc"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9829C18725987EEE000A893E /* CardStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 9829C18525987EEE000A893E /* CardStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9829C199259881FF000A893E /* CardContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C197259881FF000A893E /* CardContainer.swift */; };
+		9829C19A259881FF000A893E /* CardContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9829C198259881FF000A893E /* CardContainer.xib */; };
+		9829C19F25988460000A893E /* CardContainerOutlets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C19E25988460000A893E /* CardContainerOutlets.swift */; };
+		9829C1A425988525000A893E /* ChildVCInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C1A325988525000A893E /* ChildVCInfo.swift */; };
+		9829C1A925988553000A893E /* ViewEmbedder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C1A825988553000A893E /* ViewEmbedder.swift */; };
+		9829C1AD25988570000A893E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C1AC25988570000A893E /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9829C18225987EEE000A893E /* CardStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CardStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9829C18525987EEE000A893E /* CardStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardStack.h; sourceTree = "<group>"; };
 		9829C18625987EEE000A893E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9829C197259881FF000A893E /* CardContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainer.swift; sourceTree = "<group>"; };
+		9829C198259881FF000A893E /* CardContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardContainer.xib; sourceTree = "<group>"; };
+		9829C19E25988460000A893E /* CardContainerOutlets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContainerOutlets.swift; sourceTree = "<group>"; };
+		9829C1A325988525000A893E /* ChildVCInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildVCInfo.swift; sourceTree = "<group>"; };
+		9829C1A825988553000A893E /* ViewEmbedder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEmbedder.swift; sourceTree = "<group>"; };
+		9829C1AC25988570000A893E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +60,54 @@
 			children = (
 				9829C18525987EEE000A893E /* CardStack.h */,
 				9829C18625987EEE000A893E /* Info.plist */,
+				9829C1942598807F000A893E /* Card Container */,
 			);
 			path = CardStack;
+			sourceTree = "<group>";
+		};
+		9829C1942598807F000A893E /* Card Container */ = {
+			isa = PBXGroup;
+			children = (
+				9829C1A725988542000A893E /* Protocols */,
+				9829C1A225988515000A893E /* Model */,
+				9829C19D2598844C000A893E /* ViewModel */,
+				9829C19C25988440000A893E /* Controller */,
+			);
+			path = "Card Container";
+			sourceTree = "<group>";
+		};
+		9829C19C25988440000A893E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9829C197259881FF000A893E /* CardContainer.swift */,
+				9829C198259881FF000A893E /* CardContainer.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9829C19D2598844C000A893E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9829C19E25988460000A893E /* CardContainerOutlets.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9829C1A225988515000A893E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9829C1A325988525000A893E /* ChildVCInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9829C1A725988542000A893E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9829C1A825988553000A893E /* ViewEmbedder.swift */,
+				9829C1AC25988570000A893E /* UIView+Extensions.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +152,7 @@
 				TargetAttributes = {
 					9829C18125987EEE000A893E = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -120,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9829C19A259881FF000A893E /* CardContainer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9829C1A925988553000A893E /* ViewEmbedder.swift in Sources */,
+				9829C1A425988525000A893E /* ChildVCInfo.swift in Sources */,
+				9829C1AD25988570000A893E /* UIView+Extensions.swift in Sources */,
+				9829C19F25988460000A893E /* CardContainerOutlets.swift in Sources */,
+				9829C199259881FF000A893E /* CardContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +326,7 @@
 		9829C18B25987EEE000A893E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BMZMVWGL7D;
@@ -277,6 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.CardStack;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +352,7 @@
 		9829C18C25987EEE000A893E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = BMZMVWGL7D;
